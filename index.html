@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="fonts/stylesheet.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="header">
+    <div class="header__inner container">
+
+        <button class="header__button burger">
+            <img class="burger__image" src="./images/burger.svg" alt="burger">
+        </button>
+
+        <div class="header__separator separator hidden--mobile">
+            <img class="separator__image" src="./images/separator.svg" alt="separator">
+        </div>
+
+        <a class="header__logo logo" href="index.html">
+            <img class="logo__img" src="images/logo.svg" alt="scps logo">
+        </a>
+
+        <div class="header__separator separator">
+            <img class="separator__image" src="./images/separator.svg" alt="separator">
+        </div>
+
+        <button class="header__button settings">
+            <img class="settings__image" src="./images/settings.svg" alt="settings">
+        </button>
+
+        <button class="header__button search">
+            <img class="search__image" src="./images/search.svg" alt="search">
+        </button>
+    </div>
+</header>
+<main class="content">
+    <section class="section">
+        <header class="section__header container">
+            <img class="section__image" src="./images/section__image.svg" alt="header image">
+            <h1 class="section__title">Услуги и сервисы</h1>
+        </header>
+        <nav class="section__menu menu">
+            <ul class="menu__list">
+                <li class="menu__item">
+                    <a class="menu__link menu__link--active" href="#">Ремонтируемые устройства</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Дополнительные услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Цены на услуги</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link " href="#">Адреса сервисных центров</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link " href="#">Специальные цены</a>
+                </li>
+                <li class="menu__item">
+                    <a class="menu__link" href="#">Отзывы</a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <article class="article">
+        <div class="about">
+            <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
+                можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
+            </p>
+            <p class="about__text hidden--mobile ">Мы успешно работаем с 1992 года и заслужили репутацию надежного партнера, что
+                подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
+                рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
+
+            <div class="expander">
+                <img class="expander__image" src="./images/expand.svg" alt="read-more">
+                <a class="expander__link" href="#">Читать далее</a>
+            </div>
+        </div>
+        <img class="article__image" src="./images/pic.jpg" alt="сsp image">
+    </article>
+</main>
+</body>
+</html>
