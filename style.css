@@ -20,6 +20,8 @@ body{
 }
 .container{
     height: 88px;
+    padding: 24px 16px;
+
 }
 .hidden--mobile{
     display: none;
@@ -51,6 +53,7 @@ body{
     display: flex;
     justify-content: start;
     align-items: center;
+    transform: translateX(-16px);
 }
 .section__image{
     padding-right: 12px;
