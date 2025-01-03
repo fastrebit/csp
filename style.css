@@ -149,3 +149,8 @@ body{
     text-decoration-skip-ink: none;
     text-align: start;
 }
+@media (max-width: 768px) {
+    .hidden--mobile{
+        display: flex;
+    }
+}
