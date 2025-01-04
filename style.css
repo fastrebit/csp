@@ -39,6 +39,12 @@ body{
 }
 .burger{
     margin-right: 16px;
+
+}
+.header__button{
+    background-color: rgba(255, 62, 121, 1);
+    border-color: rgba(255, 62, 121, 1);
+    border-radius: 50%;
 }
 .search{
     margin-left: 16px;
@@ -143,7 +149,7 @@ body{
 .about__text{
     padding-bottom:  16px;
     margin: 0;
-    min-width: 320px; /* Установите фиксированную ширину блока */
+    /* Установите фиксированную ширину блока */
     max-height: 130px;
     overflow: hidden;
     font-size: 14px;
@@ -153,12 +159,14 @@ body{
     text-decoration-skip-ink: none;
     text-align: start;
 }
-.article__imag{
-    max-width: 360px;
-    max-height: 208px;
+.image__item{
+    width: 100%;
 }
 .about__hidden{
     display: none;
+}
+.contacts{
+    display:none;
 }
 @media (min-width: 768px) {
 
@@ -166,19 +174,49 @@ body{
         display: flex;
         padding-left: 4px;
     }
+
     .container{
         padding:24px;
     }
     .logo__img{
         padding-left: 20px;
     }
-    .article{
-        flex-direction: row;
+    .header__contacts{
+        display:flex;
+
     }
-    .article__imag{
-        max-width: 531px;
-        max-height: 307px;
-        min-width: 360px;
-        min-height: 208px;
+    .article{
+        display: flex;
+        flex-direction: row;
+        align-items: stretch;
+        justify-content: space-between;
+        padding: 32px 24px;
+    }
+    .about{
+        width: 50%;
+        height: 100%;
+        padding-right: 48px;
+    }
+    .article__image{
+        width: 50%;
+    }
+    .profile{
+        margin-right: 20px;
+    }
+    .chat{
+        margin-right: 16px;
+    }
+    .phone{
+        margin-right: 16px;
+    }
+    .about__text{
+        max-height: 160px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.2px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
     }
 }
