@@ -10,7 +10,7 @@ body{
     background-color: rgba(248, 248, 248, 1);
     font-family: 'TT Lakes', sans-serif;
 }
-.header__inner{
+.header__container{
     display: flex;
     padding: 18px 16px;
     justify-content: space-between;
@@ -46,25 +46,25 @@ body{
     border-color: rgba(255, 62, 121, 1);
     border-radius: 50%;
 }
-.search{
+.status{
     margin-left: 16px;
 }
-.settings{
+.request{
     margin-left: 20px;
 }
 .header__separator{
     max-height: 32px;
 }
-.section__header{
+.section-header{
     display: flex;
     justify-content: start;
     align-items: center;
     transform: translateX(-16px);
 }
-.section__image{
+.section-header__image{
     padding-right: 12px;
 }
-.section__title{
+.section-header__title{
     font-size: 28px;
     line-height: 40px;
     letter-spacing: -0.6000000238418579px;
@@ -149,7 +149,6 @@ body{
 .about__text{
     padding-bottom:  16px;
     margin: 0;
-    /* Установите фиксированную ширину блока */
     max-height: 130px;
     overflow: hidden;
     font-size: 14px;
@@ -167,6 +166,39 @@ body{
 }
 .contacts{
     display:none;
+}
+.section-header__menu{
+    display:none;
+    height: 40px;
+}
+.header-menu__image--round{
+    background-color: rgba(255, 62, 121, 1);
+    border: 1px solid rgba(255, 62, 121, 1);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: 8px;
+}
+.header-menu__image{
+    width: 20px;
+    height: 20px;
+}
+.header-menu__link{
+    display: flex;
+    text-decoration: none;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.2px;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    color: rgba(27, 28, 33, 1);
+    font-weight: 500;
+    height: 40px;
+    align-items: center;
+    margin-left: 32px;
 }
 @media (min-width: 768px) {
 
@@ -191,6 +223,9 @@ body{
         align-items: stretch;
         justify-content: space-between;
         padding: 32px 24px;
+    }
+    .section-header__image{
+        transform: translateX(-8px);
     }
     .about{
         width: 50%;
@@ -218,5 +253,77 @@ body{
         text-underline-position: from-font;
         text-decoration-skip-ink: none;
 
+    }
+    .expander{
+        padding-top: 10px;
+    }
+}
+
+@media (min-width: 1120px) {
+    .header__container{
+        display: none;
+    }
+    .container{
+        padding:42px 32px 8px 0px;
+
+    }
+    .section{
+        display: flex;
+       height: 180px;
+        flex-direction: column;
+    }
+    .section-header__menu{
+        display: flex;
+        margin-left: auto;
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        max-width: 1110px;
+        margin: 0 auto;
+    }
+    .menu__list{
+        display: inline-block;
+        align-items: center;
+        list-style: none;
+        overflow-x: scroll;
+        overflow-y: hidden;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        padding: 0;
+        margin: 0 0 0 16px;
+    }
+    .about__text{
+        max-height: 160px;
+        font-size: 14px;
+        line-height: 20px;
+        letter-spacing: 0.20000000298023224px;
+        text-align: left;
+        text-underline-position: from-font;
+        text-decoration-skip-ink: none;
+
+    }
+    .section-header__image{
+        display: none;
+
+    }
+    .section-header {
+        transform: translateX(-5px);
+    }
+    .expander{
+        padding-top: 14px;
+    }
+    .article{
+        max-height: 307px;
+        padding-top: 0;
+    }
+    .section-header__title{
+     display: flex;
+    }
+    .section-header__title::before{
+        content: url(images/highlight.svg);
+        margin-right: 32px;
     }
 }
