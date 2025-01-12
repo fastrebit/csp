@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,67 +11,30 @@
 <body>
 <header class="header">
     <div class="header__container container">
-
-        <button class="header__button burger">
-            <img class="burger__image" src="./images/burger.svg" alt="burger">
-        </button>
-
-        <div class="header__separator separator separator--hidden">
-            <img class="separator__image" src="./images/separator.svg" alt="separator">
-        </div>
-
-        <a class="header__logo logo" href="index.html">
-            <img class="logo__img" src="images/logo.svg" alt="logo">
+        <button class="header__button burger"></button>
+        <a class="header__logo" href="index.html">
         </a>
         <div class="header__contacts contacts">
-            <button class="header__button phone">
-                <img class="phone__image" src="./images/phone.svg" alt="phone">
-            </button>
-            <button class="header__button chat">
-                <img class="chat__image" src="./images/chat.svg" alt="chat">
-            </button>
-            <button class="header__button profile">
-                <img class="profile__image" src="./images/profile.svg" alt="profile">
-            </button>
+            <button class="header__button phone"></button>
+            <button class="header__button chat"></button>
+            <button class="header__button profile"></button>
         </div>
-
-        <div class="header__separator separator">
-            <img class="separator__image" src="./images/separator.svg" alt="separator">
-        </div>
-
-        <button class="header__button request">
-            <img class="settings__image" src="./images/request.svg" alt="request">
-        </button>
-
-        <button class="header__button status">
-            <img class="status__image" src="./images/status.svg" alt="status">
-        </button>
+        <button class="header__button request"></button>
+        <button class="header__button status"></button>
 
     </div>
 </header>
 <main class="content">
     <section class="section">
-        <header class="section-header container">
-            <img class="section-header__image" src="./images/section__image.svg" alt="header image">
+        <header class="section-header ">
             <h1 class="section-header__title">Услуги и сервисы</h1>
-
-
             <div class="section-header__menu header-menu">
-                <a class="header-menu__link" href="#">
+                <a class="header-menu__link submit-button" href="#">
                     Оставить заявку
-                    <div class="header-menu__image--round">
-                        <img class="header-menu__image" src="./images/request.svg" alt="menu image">
-                    </div>
-
                 </a>
-
-                <a class="header-menu__link" href="#">
+                <a class="header-menu__link repair-status" href="#">
                     Статус ремонта
-                    <div class="header-menu__image--round">
-                    <img class="header-menu__image" src="./images/status.svg" alt="menu image">
-                    </div>
                 </a>
-
             </div>
         </header>
         <nav class="section__menu menu">
@@ -98,7 +61,7 @@
         </nav>
     </section>
     <article class="article">
-        <div class="about ">
+        <div class="about">
             <p class="about__text">Мы являемся авторизованным сервисным центром по ремонту техники Dell. Только у нас вы
                 можете отремонтировать свой ноутбук Dell с официальной гарантией производителя.
                 <br>
@@ -107,12 +70,11 @@
                 подтверждает большое количество постоянных клиентов. Мы гордимся тем, что к нам обращаются по
                 рекомендациям и, в свою очередь, советуют нас родным и близким.</p>
             <div class="expander">
-                <img class="expander__image" src="./images/expand.svg" alt="read-more">
-                <a class="expander__link" href="#">Читать далее</a>
+                <button class="expander__button">Читать далее</button>
             </div>
         </div>
         <div class="article__image image">
-        <img class="image__item" src="./images/pic.jpg" alt="сsp image">
+            <img class="image__item" src="./images/pic.jpg" alt="сsp image">
         </div>
     </article>
 </main>
